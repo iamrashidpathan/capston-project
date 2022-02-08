@@ -7,6 +7,8 @@ const AppContext= React.createContext();
 function AppContextProvider(props){
 
     const [allPhotos, setAllPhotos] = useState([])
+    const [cartItems, setCartItems] = useState([])
+    
         
     const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
 
@@ -32,14 +34,43 @@ function AppContextProvider(props){
             
         })
         
-        setAllPhotos(newArray)
+        setAllPhotos(newArray)    
+    }
+
+
+    function addToCart(img){
+
+        const isInCart = cartItems.filter(i => (i.id === img.id))
+
+       
+        //console.log(cartItems)
+        if(!isInCart.length){
+            setCartItems((prevItems)=>{
+                //console.log(prevItems)
+                  return(
+                      [
+                          ...prevItems,
+                          img,
+                          
+                      ]
+                  )
+            })
+        }
 
         
     }
-    console.log(allPhotos)
+
+
+    function removeFromCart(id){
+        const newArray = cartItems.filter(item => (item.id != id))
+
+        setCartItems(newArray)
+    }
+    
+    //console.log(cartItems)
 
     return(
-        <AppContext.Provider value={{allPhotos, togglgeFavorite}}>
+        <AppContext.Provider value={{allPhotos, cartItems, togglgeFavorite, addToCart, removeFromCart}}>
             {props.children}
         </AppContext.Provider>
     )
