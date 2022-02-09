@@ -66,11 +66,15 @@ function AppContextProvider(props){
 
         setCartItems(newArray)
     }
+
+    function emptyCart(){
+        setCartItems([])
+    }
     
     //console.log(cartItems)
 
     return(
-        <AppContext.Provider value={{allPhotos, cartItems, togglgeFavorite, addToCart, removeFromCart}}>
+        <AppContext.Provider value={{allPhotos, cartItems, togglgeFavorite, addToCart, removeFromCart, emptyCart}}>
             {props.children}
         </AppContext.Provider>
     )

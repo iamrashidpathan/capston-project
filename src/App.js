@@ -20,6 +20,7 @@ function App() {
                 <Route exact path="/" element={<Photos/>}/>
 
                 <Route path="/cart" element={<Cart/>} />
+
                     
             </Routes>
   
