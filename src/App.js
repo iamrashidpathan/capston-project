@@ -17,7 +17,7 @@ function App() {
             
             <Routes>
                 
-                <Route exact path="/" element={<Photos/>}/>
+                <Route exact path="/capstonproject" element={<Photos/>}/>
 
                 <Route path="/cart" element={<Cart/>} />
 

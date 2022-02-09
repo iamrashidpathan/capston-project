@@ -20,7 +20,7 @@ function Header() {
 
     return (
         <header>
-            <Link to='/'>
+            <Link to='/capstonproject'>
                 <h2>Pic Some</h2>
             </Link>
                    
