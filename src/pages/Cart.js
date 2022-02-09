@@ -29,6 +29,7 @@ function Cart() {
                     console.log("Order placed!")
                     setButtonText("Place Order")
                     emptyCart()
+                    alert("Order placed!")
                     
                 }
                 , 3000)
@@ -46,7 +47,7 @@ function Cart() {
             {cartItems.length !==0 &&<h1>Check out</h1>}
             {cartItems.length ===0 &&<h1>Your Cart is empty</h1>}
             {cart}
-            <p className="total-cost">Total: ${cartItems.length * 5.99} </p>
+            <p className="total-cost">Total: ${Math.round(cartItems.length * 5.99*100)/100} </p>
             
             { cartItems.length !==0 &&
                 <div className="order-button">
