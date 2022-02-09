@@ -1,5 +1,5 @@
 
-# Hosted at https://iamrashidpathan.github.io/capston-project
+# Hosted at https://iamrashidpathan.github.io/capstonproject
 
 # Getting Started with Create React App
 
