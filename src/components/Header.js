@@ -21,7 +21,7 @@ function Header() {
     return (
         <header>
             <Link to='/capstonproject'>
-                <h2>Pic Some</h2>
+                <h2 style={{margin: 2,padding:5}} >Pic Some</h2>
             </Link>
                    
            
