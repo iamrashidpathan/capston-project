@@ -45,7 +45,7 @@ function Cart() {
     return (
         <main className="cart-page">
             {cartItems.length !==0 &&<h1>Check out</h1>}
-            {cartItems.length ===0 &&<h1>Your Cart is empty</h1>}
+            {cartItems.length ===0 &&<h1>Start collecting Awesome stuffs</h1>}
             {cart}
             <p className="total-cost">Total: ${Math.round(cartItems.length * 5.99*100)/100} </p>
             

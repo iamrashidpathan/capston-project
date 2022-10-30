@@ -5,9 +5,7 @@ import PropTypes from "prop-types"
 function CartItem({item}) {
 
     const [isHover, setisHover] = useState(false)
-
     const {removeFromCart} = useContext(AppContext)
-
     const trashicon = isHover? "ri-delete-bin-fill" :"ri-delete-bin-line"
 
     return (
