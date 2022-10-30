@@ -10,13 +10,11 @@ function CartItem({item}) {
 
     return (
         <div className="cart-item">
-
             <i 
             onMouseEnter={()=>setisHover(true)}
             onMouseLeave={()=>setisHover(false)}
             className= {trashicon}
             onClick={()=>removeFromCart(item.id)}></i>
-
             <img src={item.url} width="130px" />
             <p>$5.99</p>
         </div>

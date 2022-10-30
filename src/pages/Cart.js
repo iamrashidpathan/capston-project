@@ -17,16 +17,16 @@ function Cart() {
 
         const [buttontext, setButtonText] = useState("Place Order")
 
-    //console.log(cartItems)
+    // (cartItems)
 
         
 
         function handleOrder(e){
-            //console.log("click")
+            // ("click")
             setButtonText("Ordering...")
             setTimeout(
                 ()=>{
-                    console.log("Order placed!")
+                     ("Order placed!")
                     setButtonText("Place Order")
                     emptyCart()
                     alert("Order placed!")

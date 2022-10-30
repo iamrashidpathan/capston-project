@@ -122,8 +122,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: #38aaad;
+    margin: 10px 52px;
     color: var(--light-blue);
     padding: 0 10px;
+    padding-left: 615px;
     -webkit-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
     -moz-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
     box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
