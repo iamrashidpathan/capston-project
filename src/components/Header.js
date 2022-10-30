@@ -22,9 +22,7 @@ function Header() {
         <header>
             <Link to='/capstonproject'>
                 <h2 style={{margin: 2,padding:5}} >Pic Some</h2>
-            </Link>
-                   
-           
+            </Link>  
            <Link to="/cart">
             {cartIcon()}
            </Link>   

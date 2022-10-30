@@ -8,30 +8,15 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {    
     return (
-    
-    
         <Router>
-        <div>
-            
-            <Header />
-            
-            <Routes>
-                
-                <Route exact path="/capstonproject" element={<Photos/>}/>
-
-                <Route path="/cart" element={<Cart/>} />
-
-                    
-            </Routes>
-  
-
-        </div>
-    </Router>
-    
-    
-            
-        
-        
+            <div>
+                <Header />
+                <Routes>
+                    <Route exact path="/capstonproject" element={<Photos/>}/>
+                    <Route path="/cart" element={<Cart/>} />
+                </Routes>
+            </div>
+        </Router>
     )
 }
 
