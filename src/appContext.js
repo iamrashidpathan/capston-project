@@ -18,10 +18,9 @@ function AppContextProvider(props){
             .then(data => setAllPhotos(data))
     },[])
 
-    //console.log(allPhotos)
 
     function togglgeFavorite(id){
-        //console.log(id)
+        // (id)
         const newArray = allPhotos.map(x=>{
             if(x.id === id){
                 return({...x,
@@ -43,10 +42,10 @@ function AppContextProvider(props){
         const isInCart = cartItems.filter(i => (i.id === img.id))
 
        
-        //console.log(cartItems)
+        // (cartItems)
         if(!isInCart.length){
             setCartItems((prevItems)=>{
-                //console.log(prevItems)
+                // (prevItems)
                   return(
                       [
                           ...prevItems,
@@ -71,7 +70,7 @@ function AppContextProvider(props){
         setCartItems([])
     }
     
-    //console.log(cartItems)
+    // (cartItems)
 
     return(
         <AppContext.Provider value={{allPhotos, cartItems, togglgeFavorite, addToCart, removeFromCart, emptyCart}}>

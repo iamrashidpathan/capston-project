@@ -7,7 +7,7 @@ function Image({className, img}){
 const [isHover, setisHover] = useState(false)
 
 const {togglgeFavorite, addToCart, cartItems,removeFromCart} = useContext(AppContext)
-//console.log(togglgeFavorite)
+// (togglgeFavorite)
 
     var isinCart = cartItems.filter(item => (item.id === img.id))
 
@@ -22,9 +22,6 @@ const {togglgeFavorite, addToCart, cartItems,removeFromCart} = useContext(AppCon
             onClick={()=>addToCart(img)}></i>
         }
     }
-
-    //console.log(addToCartIcon)
-
     return(
         <div className={`${className} image-container`}
         onMouseOver={()=> setisHover(true)}
@@ -32,12 +29,9 @@ const {togglgeFavorite, addToCart, cartItems,removeFromCart} = useContext(AppCon
         >
             {isHover && <i className= "ri-heart-line favorite"
             onClick={()=>togglgeFavorite(img.id)}></i>}
-
             {img.isFavorite && <i className="ri-heart-fill favorite"
             onClick={()=>togglgeFavorite(img.id)}></i>}
-
             {addToCartIcon()}
-
             <img src ={img.url} className="image-grid" />
         </div>
     )
